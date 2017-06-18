@@ -10,27 +10,23 @@ if (file_exists('database/account') == FALSE)
 		<title>minishop</title>
 	</head>
 	<body bgcolor="#f2effc">
-		<table>
+		<table class="nav-bar">
 			<tr>
-				<th><a href="./index.php">HOME</a></th>
-				<th><a href="./index.php?link=cat">CATEGORIES</th>
-				<th><a href="./index.php?link=bag">MY BAG</th>
+				<th><a href="./index.php" class="nav-item">HOME</a></th>
+				<th><a href="./index.php?link=cat" class="nav-item">CATEGORIES</th>
+				<th><a href="./index.php?link=bag" class="nav-item">MY BAG</th>
 <?php
 	if ($_SESSION['log'] == 1)
 	{
-		echo '<th><a href="./index.php?link=myaccount">MY ACCOUNT</a></th>';
-		echo '<th><a href="./logout.php">LOGOUT</a></th>';
+		echo '<th><a href="./index.php?link=myaccount" class="nav-item">MY ACCOUNT</a></th>';
+		echo '<th><a href="./logout.php" class="nav-item">LOGOUT</a></th>';
 	}
 	else
 	{
-		echo '<th><a href="./index.php?link=login">LOGIN</a></th>';
-		echo '<th><a href="./index.php?link=join">JOIN</a></th>';
+		echo '<th><a href="./index.php?link=login" class="nav-item">LOGIN</a></th>';
+		echo '<th><a href="./index.php?link=join" class="nav-item">JOIN</a></th>';
 	}
-	if ($_SESSION['admin'] == 1)
-	{
-		echo '<th><a href="./index.php?link=admin">ADMIN</a></th>';
-	}
-	?>
+?>
 			</tr>
 		</table>
 <?php
