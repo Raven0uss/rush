@@ -39,18 +39,36 @@ $data['sales'] = 'sales';
 file_manager($data, 'database/categories');
 
 $data = NULL;
-$data['item'] = 'Thaitsuki Nihonto Katana';
-$data['type1'] = 'katana';
-$data['type2'] = 'sales';
-$data['id'] = 1;
-$data['picture'] = 'http://www.yelomart.fr/wp-content/uploads/2016/01/katana.jpg';
-$data['carac'] = 'Thaitsuki Nihonto is steeped in tradition and quality with blades produced by a family forge thats been perfecting their art for over 200 years. The Sivrat family first obtains the finest quality high carbon Japanese steel to produce their Kumori Katana, which is forged in the oldest tradition in Japanese swordmaking, the Yamato Nihonto tradition.
+
+$data[0]['item'] = 'Thaitsuki Nihonto Katana';
+$data[0]['type1'] = 'katana';
+$data[0]['type2'] = 'sales';
+$data[0]['id'] = 1;
+$data[0]['picture'] = 'http://www.yelomart.fr/wp-content/uploads/2016/01/katana.jpg';
+$data[0]['carac'] = 'Thaitsuki Nihonto is steeped in tradition and quality with blades produced by a family forge thats been perfecting their art for over 200 years. The Sivrat family first obtains the finest quality high carbon Japanese steel to produce their Kumori Katana, which is forged in the oldest tradition in Japanese swordmaking, the Yamato Nihonto tradition.
 Overall: 41" (104.1 cm)
 Blade: 29 1/2" (74.93 cm)
 Tang: 10" (25.4 cm)
 Tsuka: 11" (27.94 cm)
 Weight: 2.5 lbs. (1.2 kg)
 Balance Point: 5 1/2" (14cm)';
-$data['price'] = '1200';
+$data[0]['price'] = '1200';
+
+$data[1]['item'] = 'Thaitsuki Nihonto Katana';
+$data[1]['type1'] = 'katana';
+$data[1]['type2'] = 'sales';
+$data[1]['id'] = 1;
+$data[1]['picture'] = 'http://www.yelomart.fr/wp-content/uploads/2016/01/katana.jpg';
+$data[1]['carac'] = 'Thaitsuki Nihonto is steeped in tradition and quality with blades produced by a family forge thats been perfecting their art for over 200 years. The Sivrat family first obtains the finest quality high carbon Japanese steel to produce their Kumori Katana, which is forged in the oldest tradition in Japanese swordmaking, the Yamato Nihonto tradition.
+Overall: 41" (104.1 cm)
+Blade: 29 1/2" (74.93 cm)
+Tang: 10" (25.4 cm)
+Tsuka: 11" (27.94 cm)
+Weight: 2.5 lbs. (1.2 kg)
+Balance Point: 5 1/2" (14cm)';
+$data[1]['price'] = '1200';
+
+print_r($data);
+
 file_manager($data, 'database/products');
 ?>
