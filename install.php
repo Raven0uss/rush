@@ -5,20 +5,20 @@ function file_manager($data, $path)
 	{
 		$array = file_get_contents($path);
 		$array = unserialize($array);
-		$array[] = $data;
+		$array[0] = $data;
 		$content = $array;
 	}
 	else
 		$content[0] = $data;
-		if ($content != NULL)
-		{
-			$array = serialize($content);
-			if (file_exists('database/') == FALSE)
-				mkdir('database/');
-			file_put_contents($path, $array);
-		}
-		else
-			echo 'ERROR';
+	if ($content != NULL)
+	{
+		$array = serialize($content);
+		if (file_exists('database/') == FALSE)
+			mkdir('database/');
+		file_put_contents($path, $array);
+	}
+	else
+		echo 'ERROR';
 }
 
 $data = NULL;
