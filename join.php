@@ -52,22 +52,24 @@ if ($_SESSION['fill'] == "1" && $_POST['submit'] == "JOIN NOW")
 ?>
 <html>
 	<body>
-		<form action="index.php?link=join" method="POST">
-		LOGIN: <input type="text" name="login" value=""/>
-		<br />
-		PASSWORD: <input type="password" name="password" value=""/>
-		<br />
-		FIRST NAME: <input type="text" name="firstname" value=""/>
-		<br />
-		LAST NAME: <input type="text" name="lastname" value=""/>
-		<br />
-		ADDRESS: <input type="text" name="address" value=""/>
-		<br />
-		EMAIL: <input type="text" name="email" value=""/>
-		<br />
-		<input type="submit" name="submit" value="JOIN NOW"/>
-		<br />
-		</form>
+		<div class="join-form">
+			<form action="index.php?link=join" method="POST">
+				LOGIN: <input type="text" name="login" value=""/>
+				<br />
+				PASSWORD: <input type="password" name="password" value=""/>
+				<br />
+				FIRST NAME: <input type="text" name="firstname" value=""/>
+				<br />
+				LAST NAME: <input type="text" name="lastname" value=""/>
+				<br />
+				ADDRESS: <input type="text" name="address" value=""/>
+				<br />
+				EMAIL: <input type="text" name="email" value=""/>
+				<br />
+				<input type="submit" name="submit" value="JOIN NOW" class="join-btn"/>
+				<br />
+			</form>
+		</div>
 		<a href="./index.php?link=login">ALREADY REGISTERED ?</a>
 	</body>
 </html>

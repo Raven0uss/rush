@@ -70,13 +70,13 @@ if ($_GET['cat'] == 'katana')
 }
 ?>
 <br />
-<td><a href="./index.php?link=cat&cat=shuriken">SHURIKENS</a></td>
+<a href="./index.php?link=cat&cat=shuriken">SHURIKENS</a>
 <br />
 <br />
-<td><a href="./index.php?link=cat&cat=nunchuk">NUNCHUKS</a></td>
+<a href="./index.php?link=cat&cat=nunchuk">NUNCHUKS</a>
 <br />
 <br />
-<td><a href="./index.php?link=cat&cat=sales">SALES</a></td>
+<a href="./index.php?link=cat&cat=sales">SALES</a>
 <br />
 <?php
 if ($_GET['cat'] == 'sales')

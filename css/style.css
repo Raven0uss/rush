@@ -1,0 +1,51 @@
+.nav-item {
+	color: white;
+}
+
+.nav-bar {
+	background-color: black;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 15px;
+}
+
+a {
+	background-color: transparent; 
+	text-decoration: none;
+}
+
+label {
+
+}
+
+input {
+	border-radius: 5px;
+	height: 30px;
+	margin-top: 10px;
+}
+
+.login-form {
+	border: 1px red solid;
+	border-radius: 10px;
+	background-color: lightblue;
+	padding: 25px;
+	width: 20%;
+	margin-left: 35%;
+	margin-top: 15%;
+}
+
+.login-btn, .join-btn {
+	margin-left: 25%;
+	margin-top: 10px;
+	width: 50%;
+}
+
+.join-form {
+	border: 1px red solid;
+	border-radius: 10px;
+	background-color: lightblue;
+	padding: 25px;
+	width: 20%;
+	margin-left: 35%;
+	margin-top: 15%;
+}
