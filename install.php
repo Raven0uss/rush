@@ -42,6 +42,7 @@ $data = NULL;
 $data['item'] = 'Thaitsuki Nihonto Katana';
 $data['type1'] = 'katana';
 $data['type2'] = 'sales';
+$data['id'] = 1;
 $data['picture'] = 'http://www.yelomart.fr/wp-content/uploads/2016/01/katana.jpg';
 $data['carac'] = 'Thaitsuki Nihonto is steeped in tradition and quality with blades produced by a family forge thats been perfecting their art for over 200 years. The Sivrat family first obtains the finest quality high carbon Japanese steel to produce their Kumori Katana, which is forged in the oldest tradition in Japanese swordmaking, the Yamato Nihonto tradition.
 Overall: 41" (104.1 cm)

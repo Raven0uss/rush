@@ -59,11 +59,6 @@ if ($_POST['del'] == "DELETE ACCOUNT")
 	<input type="submit" name="checkout" value="CHECKOUT"/>
 	<br />
 	<br />
-	MY ORDERS
-	<br />
-	display past orders
-	<br />
-	<br />
 	CHANGE INFOS
 	<br />
 	Change First Name: <input type="text" name ="firstname" value=""/>

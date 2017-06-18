@@ -14,16 +14,16 @@
         {
             $_SESSION['bag'] = array();             // Panier
             $_SESSION['bag']['id'] = array();
-            $_SESSION['bag']['name'] = array();     // Nom de l'article
+            $_SESSION['bag']['item'] = array();     // Nom de l'article
             $_SESSION['bag']['price'] = array();    // Prix de l'article
             $_SESSION['bag']['qty'] = array();       // Quantite
             echo("Bag has been created\n\n");
         }
         array_push($_SESSION['bag']['id'], $data['id']);
-        array_push($_SESSION['bag']['name'], $data['name']);
+        array_push($_SESSION['bag']['item'], $data['item']);
         array_push($_SESSION['bag']['qty'], $data['qty']);
         array_push($_SESSION['bag']['price'], $data['price']);
-        echo("Article add with succes\n\n");
+        echo("Article added with success\n\n");
     }
 
     function isinbag($id)
@@ -39,7 +39,7 @@
     session_start();
     $data['id'] = $_POST['id'];
     $data["qty"] = (int)$_POST['qty'];
-    $data['name'] = $_POST['name'];
+    $data['item'] = $_POST['item'];
     $data['price'] = $_POST['price'];
     if (isinbag($data['id']) === FALSE)
         add_bag($data);

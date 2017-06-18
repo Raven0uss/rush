@@ -1,6 +1,5 @@
 <?php
 session_start();
-include 'empty_bag.php';
     function isinbag($id) //Doublon (also in add_bag)
     {
         session_start();
@@ -10,7 +9,7 @@ include 'empty_bag.php';
             if ($key == $id)
                 return (TRUE);
         return (FALSE);
-}
+    }
     function empty_bag() //Doublon (also in empty_bag)
     {
         session_start();

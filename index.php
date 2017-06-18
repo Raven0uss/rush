@@ -26,7 +26,11 @@ if (file_exists('database/account') == FALSE)
 		echo '<th><a href="./index.php?link=login">LOGIN</a></th>';
 		echo '<th><a href="./index.php?link=join">JOIN</a></th>';
 	}
-?>
+	if ($_SESSION['admin'] == 1)
+	{
+		echo '<th><a href="./index.php?link=admin">ADMIN</a></th>';
+	}
+	?>
 			</tr>
 		</table>
 <?php
@@ -48,13 +52,18 @@ if (file_exists('database/account') == FALSE)
 	else if ($_GET['link'] == "cat")
 	{
 		include 'cat.php';
-		include 'add_bag.php';
 	}
 	else if ($_GET['link'] == "bag")
 	{
 		include 'bag.php';
-		include 'del_item.php';
-		include 'modify_qt.php';
+		//include 'add_bag.php';
+		//include 'bag.php';
+		//include 'del_item.php';
+		//include 'modify_qt.php';
+	}
+	else if ($_GET['link'] == "admin")
+	{
+		include 'admin.php';
 	}
 	else
 		include 'home.php';
