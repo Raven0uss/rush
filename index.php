@@ -21,6 +21,10 @@ if (file_exists('database/account') == FALSE)
 		echo '<th><a href="./index.php?link=myaccount" class="nav-item">MY ACCOUNT</a></th>';
 		echo '<th><a href="./logout.php" class="nav-item">LOGOUT</a></th>';
 	}
+	if ($_SESSION['admin'] == 1)
+	{
+		echo '<th><a href="./index.php?link=admin" class="nav-item">ADMIN</a></th>';
+	}
 	else
 	{
 		echo '<th><a href="./index.php?link=login" class="nav-item">LOGIN</a></th>';

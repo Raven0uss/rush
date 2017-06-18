@@ -55,24 +55,29 @@ if ($_GET['cat'] == 'katana')
 		{
             if ($file[$i][$j]['type1'] == $_GET['cat'])
             {
-                echo $file[$i][$j]['item'];
-                if ($file[$i][$j]['type2'] == 'sales')
-                    echo "- NOW ON SALES !"."\n";
-                echo '<br />';
-                echo '<img src='.$file[$i][$j]['picture'].' />'."\n";
-                echo '<br />';
-                echo $file[$i][$j]['carac']."\n";
-                echo '<br />';
-                echo "Price: was ".$file[$i][$j]['price']."€  -  NOW 999€ ONLY !"."\n";
-                echo '<br />';
-                echo '<form action="add_bag.php" method="POST">
-                <input type="hidden" name="id" value="'.$file[$i][$j]['id'].'">
-                <input type="hidden" name="price" value="'.$file[$i][$j]['price'].'">
-                <input type="hidden" name="item" value="'.$file[$i][$j]['item'].'">
-                <input type="number" name="qty" step="1" value="1" max="99" min="1">
-                <input type="submit" name="add" value="ADD TO BAG"/>
-                </form>';
-                echo '<br />';
+                ?>
+                <div class="product">
+                    <?php 
+                    echo "<p class='product-title'>".$file[$i][$j]['item']."</p>";
+                    if ($file[$i][$j]['type2'] == 'sales')
+                        echo "- NOW ON SALES !"."\n";
+                    echo '<br />';
+                    echo '<div class="product-img-box"><img class="product-img" src='.$file[$i][$j]['picture'].' /></div>'."\n";
+                    echo '<br />';
+                    echo "<p class='product-content'>".$file[$i][$j]['carac']."\n"."</p>";
+                    echo '<br />';
+                    echo "Price: was ".$file[$i][$j]['price']."€  -  NOW 999€ ONLY !"."\n";
+                    echo '<br />';
+                    echo '<form action="add_bag.php" method="POST" class="product-form">
+                    <input type="hidden" name="id" value="'.$file[$i][$j]['id'].'">
+                    <input type="hidden" name="price" value="'.$file[$i][$j]['price'].'">
+                    <input type="hidden" name="item" value="'.$file[$i][$j]['item'].'">
+                    <input type="number" name="qty" step="1" value="1" max="99" min="1">
+                    <input type="submit" name="add" value="ADD TO BAG"/>
+                    </form>';
+                    ?>
+                </div>
+            <?php
             }
 			$j++;
 		}
@@ -94,24 +99,29 @@ if ($_GET['cat'] == 'shuriken')
         {
             if ($file[$i][$j]['type1'] == $_GET['cat'])
             {
-                echo $file[$i][$j]['item'];
-                if ($file[$i][$j]['type2'] == 'sales')
-                    echo "- NOW ON SALES !"."\n";
-                echo '<br />';
-                echo '<img src='.$file[$i][$j]['picture'].' />'."\n";
-                echo '<br />';
-                echo $file[$i][$j]['carac']."\n";
-                echo '<br />';
-                echo "Price: was ".$file[$i][$j]['price']."€  -  NOW 999€ ONLY !"."\n";
-                echo '<br />';
-                echo '<form action="add_bag.php" method="POST">
-                <input type="hidden" name="id" value="'.$file[$i][$j]['id'].'">
-                <input type="hidden" name="price" value="'.$file[$i][$j]['price'].'">
-                <input type="hidden" name="item" value="'.$file[$i][$j]['item'].'">
-                <input type="number" name="qty" step="1" value="1" max="99" min="1">
-                <input type="submit" name="add" value="ADD TO BAG"/>
-                </form>';
-                echo '<br />';
+                ?>
+                <div class="product">
+                    <?php 
+                    echo "<p class='product-title'>".$file[$i][$j]['item']."</p>";
+                    if ($file[$i][$j]['type2'] == 'sales')
+                        echo "- NOW ON SALES !"."\n";
+                    echo '<br />';
+                    echo '<div class="product-img-box"><img class="product-img" src='.$file[$i][$j]['picture'].' /></div>'."\n";
+                    echo '<br />';
+                    echo "<p class='product-content'>".$file[$i][$j]['carac']."\n"."</p>";
+                    echo '<br />';
+                    echo "Price: was ".$file[$i][$j]['price']."€  -  NOW 999€ ONLY !"."\n";
+                    echo '<br />';
+                    echo '<form action="add_bag.php" method="POST" class="product-form">
+                    <input type="hidden" name="id" value="'.$file[$i][$j]['id'].'">
+                    <input type="hidden" name="price" value="'.$file[$i][$j]['price'].'">
+                    <input type="hidden" name="item" value="'.$file[$i][$j]['item'].'">
+                    <input type="number" name="qty" step="1" value="1" max="99" min="1">
+                    <input type="submit" name="add" value="ADD TO BAG"/>
+                    </form>';
+                    ?>
+                </div>
+            <?php
             }
             $j++;
         }
@@ -133,24 +143,29 @@ if ($_GET['cat'] == 'nunchuk')
         {
             if ($file[$i][$j]['type1'] == $_GET['cat'])
             {
-                echo $file[$i][$j]['item'];
-                if ($file[$i][$j]['type2'] == 'sales')
-                    echo "- NOW ON SALES !"."\n";
-                echo '<br />';
-                echo '<img src='.$file[$i][$j]['picture'].' />'."\n";
-                echo '<br />';
-                echo $file[$i][$j]['carac']."\n";
-                echo '<br />';
-                echo "Price: was ".$file[$i][$j]['price']."€  -  NOW 999€ ONLY !"."\n";
-                echo '<br />';
-                echo '<form action="add_bag.php" method="POST">
-                <input type="hidden" name="id" value="'.$file[$i][$j]['id'].'">
-                <input type="hidden" name="price" value="'.$file[$i][$j]['price'].'">
-                <input type="hidden" name="item" value="'.$file[$i][$j]['item'].'">
-                <input type="number" name="qty" step="1" value="1" max="99" min="1">
-                <input type="submit" name="add" value="ADD TO BAG"/>
-                </form>';
-                echo '<br />';
+                ?>
+                <div class="product">
+                    <?php 
+                    echo "<p class='product-title'>".$file[$i][$j]['item']."</p>";
+                    if ($file[$i][$j]['type2'] == 'sales')
+                        echo "- NOW ON SALES !"."\n";
+                    echo '<br />';
+                    echo '<div class="product-img-box"><img class="product-img" src='.$file[$i][$j]['picture'].' /></div>'."\n";
+                    echo '<br />';
+                    echo "<p class='product-content'>".$file[$i][$j]['carac']."\n"."</p>";
+                    echo '<br />';
+                    echo "Price: was ".$file[$i][$j]['price']."€  -  NOW 999€ ONLY !"."\n";
+                    echo '<br />';
+                    echo '<form action="add_bag.php" method="POST" class="product-form">
+                    <input type="hidden" name="id" value="'.$file[$i][$j]['id'].'">
+                    <input type="hidden" name="price" value="'.$file[$i][$j]['price'].'">
+                    <input type="hidden" name="item" value="'.$file[$i][$j]['item'].'">
+                    <input type="number" name="qty" step="1" value="1" max="99" min="1">
+                    <input type="submit" name="add" value="ADD TO BAG"/>
+                    </form>';
+                    ?>
+                </div>
+            <?php
             }
             $j++;
         }
@@ -172,22 +187,27 @@ if ($_GET['cat'] == 'sales')
         {
             if ($file[$i][$j]['type2'] == $_GET['cat'])
             {
-                echo $file[$i][$j]['item']."- NOW ON SALES !"."\n";
-                echo '<br />';
-                echo '<img src='.$file[$i][$j]['picture'].' />'."\n";
-                echo '<br />';
-                echo $file[$i][$j]['carac']."\n";
-                echo '<br />';
-                echo "Price: was ".$file[$i][$j]['price']."€  -  NOW 999€ ONLY !"."\n";
-                echo '<br />';
-                echo '<form action="add_bag.php" method="POST">
-                <input type="hidden" name="id" value="'.$file[$i][$j]['id'].'">
-                <input type="hidden" name="price" value="'.$file[$i][$j]['price'].'">
-                <input type="hidden" name="item" value="'.$file[$i][$j]['item'].'">
-                <input type="number" name="qty" step="1" value="1" max="99" min="1">
-                <input type="submit" name="add" value="ADD TO BAG"/>
-                </form>';
-                echo '<br />';
+                ?>
+                <div class="product">
+                    <?php 
+                    echo "<p class='product-title'>".$file[$i][$j]['item']."</p>";
+                    echo '<br />';
+                    echo '<div class="product-img-box"><img class="product-img" src='.$file[$i][$j]['picture'].' /></div>'."\n";
+                    echo '<br />';
+                    echo "<p class='product-content'>".$file[$i][$j]['carac']."\n"."</p>";
+                    echo '<br />';
+                    echo "Price: was ".$file[$i][$j]['price']."€  -  NOW 999€ ONLY !"."\n";
+                    echo '<br />';
+                    echo '<form action="add_bag.php" method="POST" class="product-form">
+                    <input type="hidden" name="id" value="'.$file[$i][$j]['id'].'">
+                    <input type="hidden" name="price" value="'.$file[$i][$j]['price'].'">
+                    <input type="hidden" name="item" value="'.$file[$i][$j]['item'].'">
+                    <input type="number" name="qty" step="1" value="1" max="99" min="1">
+                    <input type="submit" name="add" value="ADD TO BAG"/>
+                    </form>';
+                    ?>
+                </div>
+            <?php
             }
             $j++;
         }

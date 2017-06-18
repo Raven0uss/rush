@@ -48,3 +48,45 @@ input {
 	margin-left: 35%;
 	margin-top: 15%;
 }
+
+.product {
+	width: 25%;
+	height: 50%;
+	border: 1px green solid;
+	border-radius: 10px;
+	background-color: #ececec;
+	display: inline-table;
+	margin-left: 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.product-img {
+	width: 100%;
+}
+
+.product-img-box {
+	border: 2px green solid;
+	max-height: 250px;
+	max-width: 250px;
+	margin: auto;
+}
+
+.product-title {
+	text-align: center;
+	padding: 5px;
+}
+
+.product-form {
+	text-align: center;
+}
+
+.product-content {
+	padding: 5px;
+	max-height: 15%;
+	overflow: scroll;
+}
+
+p {
+	overflow: hidden;
+}
