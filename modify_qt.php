@@ -9,4 +9,5 @@
     }
     session_start();
     modif_qty_bag($_POST['id'], $_POST['qty']);
+    header ('Location: '.$_SERVER["HTTP_REFERER"].'');
 ?>

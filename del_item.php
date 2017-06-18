@@ -42,11 +42,12 @@ session_start();
         if (count($_SESSION['bag']['id']) == 0)
         {
                 if (empty_bag() === TRUE)
-                    echo("Bag's content has been removed.\n");
+                 ;   // echo("Bag's content has been removed.\n");
         }
         else
-            echo("Item has been removed.");
+           ; // echo("Item has been removed.");
     }
     session_start();
     del_item($_POST['id']);
+    header ('Location: '.$_SERVER["HTTP_REFERER"].'');
 ?>

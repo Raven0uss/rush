@@ -56,8 +56,6 @@ if ($_POST['del'] == "DELETE ACCOUNT")
 <html><body>
 	<form action="index.php?link=myaccount" method="POST">
 	<br />
-	<input type="submit" name="checkout" value="CHECKOUT"/>
-	<br />
 	<br />
 	CHANGE INFOS
 	<br />

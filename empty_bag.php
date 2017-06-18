@@ -8,5 +8,5 @@
         return (FALSE);
     }
     if (empty_bag() === TRUE)
-        echo("Bag's content has been removed.\n");
+        header('Location: '.$_SERVER["HTTP_REFERER"].'');
 ?>
